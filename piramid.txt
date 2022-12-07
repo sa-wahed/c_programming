@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() {
+    
+    int n,a,x,i,z;
+
+    printf("number:");
+
+    scanf("%d",&n);
+
+    
+    for(a=1; a<=n; a++){
+        
+        for(i=1; i<=n-a; i++){
+            printf("  ");
+        }
+        
+        for(x=1; x<=a; x++){
+          printf("%d ",x);
+        }
+        
+        for(z=a-1; z>=1; z--){
+          printf("%d ",z);
+        }
+        printf("\n");
+    }
+    return 0;
+}
